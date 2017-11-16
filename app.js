@@ -32,8 +32,6 @@ app.get('/',function(req,res){
     res.sendFile(__dirname + "/sample.html");
 });
 
-console.log(testdata.carParking);
-
 /*getting all records*/
 app.get('/artists',function(req,res){
     MongoClient.connect(url, function(err, db) {
